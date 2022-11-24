@@ -3,9 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A - Creational", "A - Creational", "{7F219BDB-19B4-4804-8FAB-544655D9087F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Factory Method", "01 - Factory Method", "{DBADAF0B-5B15-4C99-8B39-6365CEB924DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "B - Structural", "B - Structural", "{514BA953-8276-4E8F-B5EA-337117C678AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C - Behavioral", "C - Behavioral", "{8C477146-94DB-4F40-8013-F7EE45C1F1C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Abstract Factory", "02 - Abstract Factory", "{E5470E72-71EE-4B28-8548-00F5C3ABCAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{CD37FA95-682F-456B-953B-1D0CFF757DAD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD37FA95-682F-456B-953B-1D0CFF757DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD37FA95-682F-456B-953B-1D0CFF757DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD37FA95-682F-456B-953B-1D0CFF757DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD37FA95-682F-456B-953B-1D0CFF757DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBADAF0B-5B15-4C99-8B39-6365CEB924DD} = {7F219BDB-19B4-4804-8FAB-544655D9087F}
+		{E5470E72-71EE-4B28-8548-00F5C3ABCAA9} = {7F219BDB-19B4-4804-8FAB-544655D9087F}
+		{CD37FA95-682F-456B-953B-1D0CFF757DAD} = {DBADAF0B-5B15-4C99-8B39-6365CEB924DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52E54FDE-A07B-4E1E-A368-9EA90227053B}
