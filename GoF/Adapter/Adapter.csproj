@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ForeignClient\" />
+    <Folder Include="Adapter\" />
+  </ItemGroup>
+
 </Project>
