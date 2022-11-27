@@ -1,3 +1,2 @@
-
-**Adapter**
-# GoF
+<!-- ADAPTER -->
+## ADAPTER
