@@ -19,10 +19,6 @@ public class ForeignCashMachineAdapter : ICashMachine
         }
     }
 
-    /// <summary>
-    /// Создать экземпляр иностранного кассового аппарата под обычный.
-    /// </summary>
-    /// <param name="foreignCashMachine">Иностранный кассовый аппарат.</param>
     public ForeignCashMachineAdapter(ForeignCashMachine foreignCashMachine)
     {
         _foreignCashMachine = foreignCashMachine
@@ -60,11 +56,6 @@ public class ForeignCashMachineAdapter : ICashMachine
         }
     }
 
-    /// <summary>
-    /// Сформировать текст чека для вывода на печать и сохранения в файл.
-    /// </summary>
-    /// <param name="check">Чек иностранного кассового аппарата.</param>
-    /// <returns>Форматированный текст чека.</returns>
     private string GetCheckText(Check check)
     {
         var date = check.DateTime.ToString("dd MMMM yyyy HH:mm");

@@ -2,26 +2,14 @@
 
 public class Check : ICloneable
 {
-    /// <summary>
-    /// Список товаров в кассовом чеке.
-    /// </summary>
     private List<ForeignProduct> _products;
 
     public int Number { get; private set; }
-
-    /// <summary>
-    /// Date create check
-    /// </summary>
+    
     public DateTime DateTime { get; private set; }
 
-    /// <summary>
-    /// items in check
-    /// </summary>
     public IReadOnlyList<ForeignProduct> Products => _products;
 
-    /// <summary>
-    /// Create a check instance.
-    /// </summary>
     public Check()
     {
         var rnd = new Random();
@@ -30,12 +18,7 @@ public class Check : ICloneable
         DateTime = DateTime.Now;
         _products = new List<ForeignProduct>();
     }
-
-    /// <summary>
-    /// Add item to check.
-    /// </summary>
-    /// <param name="name"></param>
-    /// <param name="price"></param>
+    
     public void Add(string name, double price)
     {
         if (string.IsNullOrEmpty(name))
@@ -50,11 +33,7 @@ public class Check : ICloneable
 
         _products.Add(new ForeignProduct(name, price));
     }
-
-    /// <summary>
-    /// Create copy check.
-    /// </summary>
-    /// <returns>Копия чека.</returns>
+    
     public object Clone()
     {
         return new Check()

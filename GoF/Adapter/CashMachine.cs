@@ -34,15 +34,7 @@ public class CashMachine : ICashMachine
         Save(checkText);
         return checkText;
     }
-
-
-    /// <summary>
-    /// Save check.
-    /// </summary>
-    /// <remarks>
-    /// Saving a receipt causes the collection of goods of the current receipt to be cleared.
-    /// </remarks>
-    /// <param name="checkText"></param>
+    
     public void Save(string checkText)
     {
         if (string.IsNullOrEmpty(checkText))
